@@ -1,0 +1,5 @@
+name: BlockParty
+version: '${project.version}'
+main: blockparty.blockparty.MainClass
+commands:
+
