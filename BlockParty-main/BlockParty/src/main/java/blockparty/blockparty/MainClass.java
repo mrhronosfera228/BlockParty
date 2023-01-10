@@ -1,5 +1,6 @@
 package blockparty.blockparty;
 
+import blockparty.blockparty.gameLogic.World;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public class MainClass extends JavaPlugin {
@@ -7,7 +8,7 @@ public class MainClass extends JavaPlugin {
     @Override
     public void onEnable() {
         instance = this;
-        Game.copyWorld("oldworld1",  "bp");
+        World.copyWorld("oldworld1",  "bp");
         EventsLoader.load();
         PlotLoad.load();
     }
